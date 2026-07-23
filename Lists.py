@@ -220,6 +220,62 @@ print(ex-actual)
 '''
 
 
+'''import random
+k=[5,3,8,2,1,3334,22,2]
+random.shuffle(k)
+print(k)'''
+
+
+#generate all subsets
+'''from  itertools import combinations
+l1=[23,45,67,23,2,4,6,7]
+for i in range(len(l1)+1):
+    for j in combinations(l1,i):
+        print(list(j))'''
+
+#sum of all equal parts
+'''l1=[1,1,3,4]
+left=0
+total=sum(l1)
+for i in l1:
+    left+=i
+    if left==total-left:
+        print("cand be divided:")
+        break
+else:
+    print("cant be divided")'''
+
+#count all n/2 elements
+'''n=[2,3,45,77,33,2,2,23,34,1,2,2,2,2,2,2,2,2,2,2,2,2]
+for i in n:
+    if n.count(i)>len(n)//2:
+        print("greater tahnnn")
+        break
+else:
+    print("noo")'''
+
+#longest consecutive number
+'''l = [100, 4, 200, 1, 3, 2]
+
+l.sort()
+
+count = 1
+max_count = 1
+
+for i in range(len(l) - 1):
+    if l[i] + 1 == l[i + 1]:
+        count += 1
+    else:
+        count = 1
+
+    if count > max_count:
+        max_count = count
+
+print("Length:", max_count)'''
+
+
+
+
 
 
 
